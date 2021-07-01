@@ -117,8 +117,8 @@ void Initialize() {
     state.player->speed = 1.3;
     state.player->textureID = LoadTexture("platformChar_idle.png");
     
-    state.player->height = 0.9f;
-    state.player->width = 0.9f;
+    state.player->height = 0.65f;
+    state.player->width = 0.65f;
     
     //Initialize tiles
     state.platforms = new Entity[PLATFORM_COUNT];
