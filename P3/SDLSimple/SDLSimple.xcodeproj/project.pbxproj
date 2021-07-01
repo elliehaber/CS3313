@@ -39,11 +39,11 @@
 			files = (
 				2DA2A2FE268AE96A009EF77D /* platformPack_tile001.png in CopyFiles */,
 				2DA2A300268C329C009EF77D /* platformChar_idle.png in CopyFiles */,
+				2DA2A2F6268AE067009EF77D /* Entity.h in CopyFiles */,
 				2DA2A2F8268AE1E8009EF77D /* george_0.png in CopyFiles */,
-				2DA2A2F5268AE067009EF77D /* Entity.cpp in CopyFiles */,
 				2DA2A302268C3349009EF77D /* platformPack_tile007.png in CopyFiles */,
 				2DA2A304268C482C009EF77D /* font1.png in CopyFiles */,
-				2DA2A2F6268AE067009EF77D /* Entity.h in CopyFiles */,
+				2DA2A2F5268AE067009EF77D /* Entity.cpp in CopyFiles */,
 				2D7FC8EE2671A0D900DCBEE5 /* jump.png in CopyFiles */,
 				2D7FC8EC26719E5200DCBEE5 /* ctg.png in CopyFiles */,
 				2D7FC8E826719E4600DCBEE5 /* fragment_textured.glsl in CopyFiles */,
