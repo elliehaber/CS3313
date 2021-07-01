@@ -65,7 +65,7 @@ void Initialize() {
     
     glViewport(0, 0, 640, 480);
     
-    program.Load("shaders/vertex_textured.glsl", "shaders/fragment_textured.glsl");
+    program.Load("/Users/elliehaber/Desktop/CS3313/P3/SDLSimple/SDLSimple/shaders/vertex_textured.glsl", "/Users/elliehaber/Desktop/CS3313/P3/SDLSimple/SDLSimple/shaders/fragment_textured.glsl");
     
     viewMatrix = glm::mat4(1.0f);
     modelMatrix = glm::mat4(1.0f);
