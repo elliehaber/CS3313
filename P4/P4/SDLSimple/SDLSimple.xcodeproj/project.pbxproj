@@ -453,8 +453,8 @@
 		2DAC7E1126706D0A0001791F /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		2DAC7E1226706D0A0001791F /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 		2DAC7E1D26717DC40001791F /* ctg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ctg.png; sourceTree = "<group>"; };
-		2DF7971F269FBB4300F57A20 /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Entity.cpp; path = /Users/elliehaber/Desktop/CS3313/P1/SDLSimple/SDLSimple/Entity.cpp; sourceTree = "<absolute>"; };
-		2DF79721269FBB4F00F57A20 /* Entity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Entity.h; path = /Users/elliehaber/Desktop/CS3313/P1/SDLSimple/SDLSimple/Entity.h; sourceTree = "<absolute>"; };
+		2DF7971F269FBB4300F57A20 /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Entity.cpp; path = /Users/elliehaber/Desktop/CS3313/P4/P4/SDLSimple/SDLSimple/Entity.cpp; sourceTree = "<absolute>"; };
+		2DF79721269FBB4F00F57A20 /* Entity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Entity.h; path = /Users/elliehaber/Desktop/CS3313/P4/P4/SDLSimple/SDLSimple/Entity.h; sourceTree = "<absolute>"; };
 		2DF79723269FBB6300F57A20 /* jungle_Tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jungle_Tile.png; path = ../../../P3/SDLSimple/SDLSimple/jungle_Tile.png; sourceTree = "<group>"; };
 		2DF79729269FBCDD00F57A20 /* walk_animation_frame1_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walk_animation_frame1_2.png; sourceTree = "<group>"; };
 		2DF7972D269FBD0400F57A20 /* skeleton-animation_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skeleton-animation_01.png"; sourceTree = "<group>"; };

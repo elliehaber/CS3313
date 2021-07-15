@@ -64,7 +64,7 @@ public:
     bool CheckCollision(Entity* other);
     void CheckCollisionsY(Entity* objects, int objectCount);
     void CheckCollisionsX(Entity* objects, int objectCount);
-    void CheckCollisionsEnemies(Entity* enemies, int enemyCount);
+    void EnemyCollide(Entity* enemies, int enemyCount);
 
     void Update(float deltaTime, Entity* player, Entity* platforms, int platformCount, Entity* enemies, int enemyCount);
     void Render(ShaderProgram* program);

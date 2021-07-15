@@ -72,7 +72,7 @@ void Entity::CheckCollisionsX(Entity *objects, int objectCount)
     }
 }
 
-void Entity::CheckCollisionsEnemies(Entity* enemies, int enemyCount) {
+void Entity::EnemyCollide(Entity* enemies, int enemyCount) {
     for (int i = 0; i < enemyCount; i++) {
         Entity* enemy = &enemies[i];
         if (CheckCollision(enemy)) {
@@ -190,7 +190,7 @@ void Entity::Update(float deltaTime, Entity* player, Entity* platforms, int plat
     collidedRight = false;
 
     if (entityType == ENEMY) AI(player);
-    else CheckCollisionsEnemies(enemies, enemyCount);
+    else EnemyCollide(enemies, enemyCount);
 
     if (animIndices != NULL) {
         if (glm::length(movement) != 0) {
