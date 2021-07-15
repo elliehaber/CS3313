@@ -173,7 +173,7 @@ void Entity::AIJumper(Entity* player) {
         break;
 
     case JUMPING:
-        if(position.y - player->position.y <= 1.2f && position.y == -2.25f) velocity.y = 5.0f;
+        if(position.y - player->position.y <= 1.2f && position.y == -2.25f) velocity.y = 4.0f;
         aiState = IDLE;
         break;
     }
