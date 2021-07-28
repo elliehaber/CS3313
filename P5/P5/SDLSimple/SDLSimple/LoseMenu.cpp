@@ -74,7 +74,7 @@ void LoseMenu::Render(ShaderProgram* program) {
 
     GLuint fontTextureID = Util::LoadTexture("font1.png");
 
-    Util::DrawText(program, fontTextureID, "You are a LOSER :(", 0.3f, 0.1f, glm::vec3(3.0, -1.0, 0));
+    Util::DrawText(program, fontTextureID, "YOU LOSE", 0.3f, 0.1f, glm::vec3(3.0, -1.0, 0));
     Util::DrawText(program, fontTextureID, "Press Enter to Play Again", 0.3f, 0.1f, glm::vec3(1.2, -3.0, 0));
 
     state.map->Render(program);
