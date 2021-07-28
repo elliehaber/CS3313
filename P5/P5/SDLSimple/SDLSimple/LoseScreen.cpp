@@ -1,4 +1,4 @@
-#include "LoseMenu.h"
+#include "LoseScreen.h"
 
 #define LOSE_WIDTH 14
 #define LOSE_HEIGHT 8
@@ -17,7 +17,7 @@ unsigned int lose_data[] =
     6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
 };
 
-void LoseMenu::Initialize() {
+void LoseScreen::Initialize() {
 
     state.nextScene = -1;
 
@@ -66,11 +66,11 @@ void LoseMenu::Initialize() {
     state.enemies[0].isActive = false;
 }
 
-void LoseMenu::Update(float deltaTime) {
+void LoseScreen::Update(float deltaTime) {
     state.player->Update(deltaTime, state.player, state.enemies, LOSE_ENEMY_COUNT, state.map);
 }
 
-void LoseMenu::Render(ShaderProgram* program) {
+void LoseScreen::Render(ShaderProgram* program) {
 
     GLuint fontTextureID = Util::LoadTexture("font1.png");
 
