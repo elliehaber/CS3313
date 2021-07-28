@@ -1,4 +1,4 @@
-#include "WinMenu.h"
+#include "WinScreen.h"
 
 #define WIN_WIDTH 14
 #define WIN_HEIGHT 8
@@ -17,7 +17,7 @@ unsigned int win_data[] =
     6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
 };
 
-void WinMenu::Initialize() {
+void WinScreen::Initialize() {
 
     state.nextScene = -1;
 
@@ -66,11 +66,11 @@ void WinMenu::Initialize() {
     state.enemies[0].isActive = false;
 }
 
-void WinMenu::Update(float deltaTime) {
+void WinScreen::Update(float deltaTime) {
     state.player->Update(deltaTime, state.player, state.enemies, WIN_ENEMY_COUNT, state.map);
 }
 
-void WinMenu::Render(ShaderProgram* program) {
+void WinScreen::Render(ShaderProgram* program) {
 
     GLuint fontTextureID = Util::LoadTexture("font1.png");
 
