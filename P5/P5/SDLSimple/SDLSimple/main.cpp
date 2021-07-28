@@ -20,8 +20,8 @@
 #include "Level1.h"
 #include "Level2.h"
 #include "Level3.h"
-#include "WinMenu.h"
-#include "LoseMenu.h"
+#include "WinScreen.h"
+#include "LoseScreen.h"
 
 
 SDL_Window* displayWindow;
