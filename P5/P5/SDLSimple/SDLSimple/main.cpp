@@ -84,8 +84,8 @@ void Initialize() {
     sceneList[1] = new Level1();
     sceneList[2] = new Level2();
     sceneList[3] = new Level3();
-    sceneList[4] = new WinMenu();
-    sceneList[5] = new LoseMenu();
+    sceneList[4] = new WinScreen();
+    sceneList[5] = new LoseScreen();
 
     sceneList[1]->state.lives = 3;
     

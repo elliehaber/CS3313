@@ -25,7 +25,7 @@ public:
     AIType aiType;
     AIState aiState;
     
-    glm::vec3 spawn;
+    glm::vec3 newPos;
     glm::vec3 position;
     glm::vec3 movement;
     glm::vec3 acceleration;
@@ -72,7 +72,7 @@ public:
     void EnemyCollide(Entity* enemies, int enemyCount);
     void CheckCollisionsX(Map *map);
     void CheckCollisionsY(Map *map);
-    void CheckCollisionsEnemies(Entity* enemies, int enemyCount);
+    //void CheckCollisionsEnemies(Entity* enemies, int enemyCount);
 
     void Update(float deltaTime, Entity* player,Entity *objects, int objectCount, Map *map);
     void Render(ShaderProgram* program);

@@ -28,6 +28,7 @@ void Level1::Initialize() {
     state.player = new Entity();
     state.player->entityType = PLAYER;
     state.player->lives = state.lives;
+    state.player->newPos = glm::vec3(2, -3, 0);
 
     state.player->position = glm::vec3(1, -3, 0);
     state.player->movement = glm::vec3(0);

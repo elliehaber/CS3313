@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D7780DE26B220EB00B51A65 /* WinScreen.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95825F26B11F1700E2000E /* WinScreen.cpp */; };
+		2D7780DF26B220ED00B51A65 /* WinScreen.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95826026B11F1700E2000E /* WinScreen.h */; };
+		2D7780E026B220EF00B51A65 /* LoseScreen.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95825726B11E6000E2000E /* LoseScreen.h */; };
+		2D7780E126B220F100B51A65 /* LoseScreen.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95825626B11E6000E2000E /* LoseScreen.cpp */; };
+		2D7780E226B220FD00B51A65 /* Entity.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DF7971F269FBB4300F57A20 /* Entity.cpp */; };
+		2D7780E326B2210400B51A65 /* Entity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DF79721269FBB4F00F57A20 /* Entity.h */; };
 		2D7FC8E826719E4600DCBEE5 /* fragment_textured.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DAC7E0326706B140001791F /* fragment_textured.glsl */; };
 		2D7FC8E926719E4600DCBEE5 /* vertex_textured.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DAC7E0426706B140001791F /* vertex_textured.glsl */; };
 		2D7FC8EA26719E4600DCBEE5 /* fragment.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DAC7E0526706B140001791F /* fragment.glsl */; };
 		2D7FC8EB26719E4600DCBEE5 /* vertex.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DAC7E0626706B140001791F /* vertex.glsl */; };
-		2D7FC8EC26719E5200DCBEE5 /* ctg.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DAC7E1D26717DC40001791F /* ctg.png */; };
-		2D7FC8EE2671A0D900DCBEE5 /* jump.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D7FC8ED2671A0CD00DCBEE5 /* jump.png */; };
-		2D95824726B1029E00E2000E /* tileset.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95824626B1028E00E2000E /* tileset.png */; };
-		2D95824926B102BE00E2000E /* george_0.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95824826B102B700E2000E /* george_0.png */; };
 		2D95824C26B1045500E2000E /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D95824A26B1045500E2000E /* Map.cpp */; };
 		2D95824F26B11D7900E2000E /* Level1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D95824D26B11D7900E2000E /* Level1.cpp */; };
 		2D95825226B11DBA00E2000E /* Level2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D95825026B11DBA00E2000E /* Level2.cpp */; };
 		2D95825526B11DE800E2000E /* Level3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D95825326B11DE800E2000E /* Level3.cpp */; };
-		2D95825826B11E6000E2000E /* LoseMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D95825626B11E6000E2000E /* LoseMenu.cpp */; };
+		2D95825826B11E6000E2000E /* LoseScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D95825626B11E6000E2000E /* LoseScreen.cpp */; };
 		2D95825B26B11E9500E2000E /* MainMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D95825926B11E9500E2000E /* MainMenu.cpp */; };
 		2D95825E26B11ECA00E2000E /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D95825C26B11ECA00E2000E /* Scene.cpp */; };
-		2D95826126B11F1700E2000E /* WinMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D95825F26B11F1700E2000E /* WinMenu.cpp */; };
+		2D95826126B11F1700E2000E /* WinScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D95825F26B11F1700E2000E /* WinScreen.cpp */; };
 		2D95826426B1217E00E2000E /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D95826226B1217E00E2000E /* Util.cpp */; };
 		2D95826526B1273100E2000E /* Map.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95824A26B1045500E2000E /* Map.cpp */; };
 		2D95826626B1273300E2000E /* Map.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95824B26B1045500E2000E /* Map.h */; };
@@ -32,26 +34,15 @@
 		2D95826A26B1273C00E2000E /* Level2.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95825126B11DBA00E2000E /* Level2.h */; };
 		2D95826B26B1273D00E2000E /* Level3.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95825326B11DE800E2000E /* Level3.cpp */; };
 		2D95826C26B1273E00E2000E /* Level3.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95825426B11DE800E2000E /* Level3.h */; };
-		2D95826D26B1274000E2000E /* LoseMenu.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95825626B11E6000E2000E /* LoseMenu.cpp */; };
-		2D95826E26B1274200E2000E /* LoseMenu.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95825726B11E6000E2000E /* LoseMenu.h */; };
 		2D95826F26B1274300E2000E /* MainMenu.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95825926B11E9500E2000E /* MainMenu.cpp */; };
 		2D95827026B1274500E2000E /* MainMenu.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95825A26B11E9500E2000E /* MainMenu.h */; };
 		2D95827126B1274600E2000E /* Scene.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95825C26B11ECA00E2000E /* Scene.cpp */; };
 		2D95827226B1274700E2000E /* Scene.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95825D26B11ECA00E2000E /* Scene.h */; };
-		2D95827326B1274900E2000E /* WinMenu.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95826026B11F1700E2000E /* WinMenu.h */; };
-		2D95827426B1274B00E2000E /* WinMenu.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95825F26B11F1700E2000E /* WinMenu.cpp */; };
 		2D95827526B1274C00E2000E /* Util.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95826226B1217E00E2000E /* Util.cpp */; };
 		2D95827626B1274E00E2000E /* Util.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95826326B1217E00E2000E /* Util.h */; };
-		2D95827826B19FB800E2000E /* tileset2.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95827726B19F9A00E2000E /* tileset2.png */; };
-		2D95827A26B1A07200E2000E /* Terrain (16x16).png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95827926B1A06500E2000E /* Terrain (16x16).png */; };
-		2D95827C26B1A19400E2000E /* countrytileset.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95827B26B1A18A00E2000E /* countrytileset.png */; };
-		2D95827E26B1A34200E2000E /* iso_tileset.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95827D26B1A33E00E2000E /* iso_tileset.png */; };
-		2D95828126B1A43600E2000E /* rpg_village02__loop.ogg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95828026B1A42E00E2000E /* rpg_village02__loop.ogg */; };
 		2D95828326B1A79F00E2000E /* bounce.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95828226B1A79300E2000E /* bounce.wav */; };
-		2D95828626B1A86C00E2000E /* Jump.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95828526B1A86400E2000E /* Jump.wav */; };
 		2D95828726B1A87000E2000E /* magic cliffs.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95828426B1A80000E2000E /* magic cliffs.wav */; };
 		2D95828926B1A9EC00E2000E /* frog.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95828826B1A9E800E2000E /* frog.png */; };
-		2D95828B26B1AA5B00E2000E /* player.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95828A26B1AA5700E2000E /* player.png */; };
 		2D95828D26B1AB5C00E2000E /* alien.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95828C26B1AB5600E2000E /* alien.png */; };
 		2D95828F26B1FC3100E2000E /* Terrain (32x32).png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95828E26B1FBD700E2000E /* Terrain (32x32).png */; };
 		2DAC7C7F267069D10001791F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC7C7E267069D10001791F /* main.cpp */; };
@@ -62,8 +53,6 @@
 		2DAC7E1726706D820001791F /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAC7E1126706D0A0001791F /* SDL2_mixer.framework */; };
 		2DAC7E1826706D820001791F /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAC7E1226706D0A0001791F /* SDL2.framework */; };
 		2DF79720269FBB4300F57A20 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DF7971F269FBB4300F57A20 /* Entity.cpp */; };
-		2DF7972B269FBCE400F57A20 /* Entity.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DF7971F269FBB4300F57A20 /* Entity.cpp */; };
-		2DF7972C269FBCE600F57A20 /* Entity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DF79721269FBB4F00F57A20 /* Entity.h */; };
 		2DF79736269FC25F00F57A20 /* font1.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DF79735269FC25900F57A20 /* font1.png */; };
 /* End PBXBuildFile section */
 
@@ -74,44 +63,33 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				2D7FC8EE2671A0D900DCBEE5 /* jump.png in CopyFiles */,
 				2D95828726B1A87000E2000E /* magic cliffs.wav in CopyFiles */,
 				2D95828F26B1FC3100E2000E /* Terrain (32x32).png in CopyFiles */,
-				2D95827A26B1A07200E2000E /* Terrain (16x16).png in CopyFiles */,
-				2DF7972C269FBCE600F57A20 /* Entity.h in CopyFiles */,
-				2D95828126B1A43600E2000E /* rpg_village02__loop.ogg in CopyFiles */,
-				2D95827C26B1A19400E2000E /* countrytileset.png in CopyFiles */,
 				2D95828D26B1AB5C00E2000E /* alien.png in CopyFiles */,
-				2D95828B26B1AA5B00E2000E /* player.png in CopyFiles */,
 				2D95828926B1A9EC00E2000E /* frog.png in CopyFiles */,
-				2D95828626B1A86C00E2000E /* Jump.wav in CopyFiles */,
 				2D95828326B1A79F00E2000E /* bounce.wav in CopyFiles */,
-				2D95827826B19FB800E2000E /* tileset2.png in CopyFiles */,
-				2D7FC8EC26719E5200DCBEE5 /* ctg.png in CopyFiles */,
-				2D95827E26B1A34200E2000E /* iso_tileset.png in CopyFiles */,
 				2D95827626B1274E00E2000E /* Util.h in CopyFiles */,
-				2D95824726B1029E00E2000E /* tileset.png in CopyFiles */,
+				2D7780E126B220F100B51A65 /* LoseScreen.cpp in CopyFiles */,
 				2D95826526B1273100E2000E /* Map.cpp in CopyFiles */,
+				2D7780E026B220EF00B51A65 /* LoseScreen.h in CopyFiles */,
 				2D95826F26B1274300E2000E /* MainMenu.cpp in CopyFiles */,
-				2D95827426B1274B00E2000E /* WinMenu.cpp in CopyFiles */,
+				2D7780DE26B220EB00B51A65 /* WinScreen.cpp in CopyFiles */,
+				2D7780DF26B220ED00B51A65 /* WinScreen.h in CopyFiles */,
 				2D95827126B1274600E2000E /* Scene.cpp in CopyFiles */,
 				2D95827026B1274500E2000E /* MainMenu.h in CopyFiles */,
-				2D95827326B1274900E2000E /* WinMenu.h in CopyFiles */,
 				2D95827526B1274C00E2000E /* Util.cpp in CopyFiles */,
 				2D95826626B1273300E2000E /* Map.h in CopyFiles */,
 				2D95826C26B1273E00E2000E /* Level3.h in CopyFiles */,
 				2D95827226B1274700E2000E /* Scene.h in CopyFiles */,
-				2D95826D26B1274000E2000E /* LoseMenu.cpp in CopyFiles */,
-				2D95826E26B1274200E2000E /* LoseMenu.h in CopyFiles */,
 				2D95826B26B1273D00E2000E /* Level3.cpp in CopyFiles */,
+				2D7780E226B220FD00B51A65 /* Entity.cpp in CopyFiles */,
 				2D95826826B1273900E2000E /* Level1.h in CopyFiles */,
 				2D95826A26B1273C00E2000E /* Level2.h in CopyFiles */,
+				2D7780E326B2210400B51A65 /* Entity.h in CopyFiles */,
 				2D95826926B1273A00E2000E /* Level2.cpp in CopyFiles */,
 				2D95826726B1273600E2000E /* Level1.cpp in CopyFiles */,
-				2D95824926B102BE00E2000E /* george_0.png in CopyFiles */,
 				2DF79736269FC25F00F57A20 /* font1.png in CopyFiles */,
 				2D7FC8E826719E4600DCBEE5 /* fragment_textured.glsl in CopyFiles */,
-				2DF7972B269FBCE400F57A20 /* Entity.cpp in CopyFiles */,
 				2D7FC8E926719E4600DCBEE5 /* vertex_textured.glsl in CopyFiles */,
 				2D7FC8EA26719E4600DCBEE5 /* fragment.glsl in CopyFiles */,
 				2D7FC8EB26719E4600DCBEE5 /* vertex.glsl in CopyFiles */,
@@ -132,14 +110,14 @@
 		2D95825126B11DBA00E2000E /* Level2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Level2.h; sourceTree = "<group>"; };
 		2D95825326B11DE800E2000E /* Level3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Level3.cpp; sourceTree = "<group>"; };
 		2D95825426B11DE800E2000E /* Level3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Level3.h; sourceTree = "<group>"; };
-		2D95825626B11E6000E2000E /* LoseMenu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoseMenu.cpp; sourceTree = "<group>"; };
-		2D95825726B11E6000E2000E /* LoseMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoseMenu.h; sourceTree = "<group>"; };
+		2D95825626B11E6000E2000E /* LoseScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoseScreen.cpp; sourceTree = "<group>"; };
+		2D95825726B11E6000E2000E /* LoseScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoseScreen.h; sourceTree = "<group>"; };
 		2D95825926B11E9500E2000E /* MainMenu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenu.cpp; sourceTree = "<group>"; };
 		2D95825A26B11E9500E2000E /* MainMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
 		2D95825C26B11ECA00E2000E /* Scene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
 		2D95825D26B11ECA00E2000E /* Scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
-		2D95825F26B11F1700E2000E /* WinMenu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WinMenu.cpp; sourceTree = "<group>"; };
-		2D95826026B11F1700E2000E /* WinMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WinMenu.h; sourceTree = "<group>"; };
+		2D95825F26B11F1700E2000E /* WinScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WinScreen.cpp; sourceTree = "<group>"; };
+		2D95826026B11F1700E2000E /* WinScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WinScreen.h; sourceTree = "<group>"; };
 		2D95826226B1217E00E2000E /* Util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Util.cpp; sourceTree = "<group>"; };
 		2D95826326B1217E00E2000E /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		2D95827726B19F9A00E2000E /* tileset2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tileset2.png; path = "../../../../../../Downloads/Magic-Cliffs-Environment/PNG/tileset2.png"; sourceTree = "<group>"; };
@@ -545,8 +523,8 @@
 		2DAC7E1126706D0A0001791F /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		2DAC7E1226706D0A0001791F /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 		2DAC7E1D26717DC40001791F /* ctg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ctg.png; sourceTree = "<group>"; };
-		2DF7971F269FBB4300F57A20 /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Entity.cpp; path = /Users/elliehaber/Desktop/CS3313/P4/P4/SDLSimple/SDLSimple/Entity.cpp; sourceTree = "<absolute>"; };
-		2DF79721269FBB4F00F57A20 /* Entity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Entity.h; path = /Users/elliehaber/Desktop/CS3313/P4/P4/SDLSimple/SDLSimple/Entity.h; sourceTree = "<absolute>"; };
+		2DF7971F269FBB4300F57A20 /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Entity.cpp; path = /Users/elliehaber/Desktop/CS3313/P5/P5/SDLSimple/SDLSimple/Entity.cpp; sourceTree = "<absolute>"; };
+		2DF79721269FBB4F00F57A20 /* Entity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Entity.h; path = /Users/elliehaber/Desktop/CS3313/P5/P5/SDLSimple/SDLSimple/Entity.h; sourceTree = "<absolute>"; };
 		2DF79729269FBCDD00F57A20 /* walk_animation_frame1_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walk_animation_frame1_2.png; sourceTree = "<group>"; };
 		2DF7972D269FBD0400F57A20 /* skeleton-animation_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skeleton-animation_01.png"; sourceTree = "<group>"; };
 		2DF7972F269FBDC700F57A20 /* crab_sprite_sheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crab_sprite_sheet.png; sourceTree = "<group>"; };
@@ -632,14 +610,14 @@
 				2D95825126B11DBA00E2000E /* Level2.h */,
 				2D95825326B11DE800E2000E /* Level3.cpp */,
 				2D95825426B11DE800E2000E /* Level3.h */,
-				2D95825626B11E6000E2000E /* LoseMenu.cpp */,
-				2D95825726B11E6000E2000E /* LoseMenu.h */,
+				2D95825626B11E6000E2000E /* LoseScreen.cpp */,
+				2D95825726B11E6000E2000E /* LoseScreen.h */,
 				2D95825926B11E9500E2000E /* MainMenu.cpp */,
 				2D95825A26B11E9500E2000E /* MainMenu.h */,
 				2D95825C26B11ECA00E2000E /* Scene.cpp */,
 				2D95825D26B11ECA00E2000E /* Scene.h */,
-				2D95825F26B11F1700E2000E /* WinMenu.cpp */,
-				2D95826026B11F1700E2000E /* WinMenu.h */,
+				2D95825F26B11F1700E2000E /* WinScreen.cpp */,
+				2D95826026B11F1700E2000E /* WinScreen.h */,
 				2D95826226B1217E00E2000E /* Util.cpp */,
 				2D95826326B1217E00E2000E /* Util.h */,
 			);
@@ -1148,7 +1126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D95826126B11F1700E2000E /* WinMenu.cpp in Sources */,
+				2D95826126B11F1700E2000E /* WinScreen.cpp in Sources */,
 				2DAC7C7F267069D10001791F /* main.cpp in Sources */,
 				2D95825B26B11E9500E2000E /* MainMenu.cpp in Sources */,
 				2D95826426B1217E00E2000E /* Util.cpp in Sources */,
@@ -1156,7 +1134,7 @@
 				2DF79720269FBB4300F57A20 /* Entity.cpp in Sources */,
 				2D95824C26B1045500E2000E /* Map.cpp in Sources */,
 				2D95825526B11DE800E2000E /* Level3.cpp in Sources */,
-				2D95825826B11E6000E2000E /* LoseMenu.cpp in Sources */,
+				2D95825826B11E6000E2000E /* LoseScreen.cpp in Sources */,
 				2DAC7E0A26706B3E0001791F /* ShaderProgram.cpp in Sources */,
 				2D95825E26B11ECA00E2000E /* Scene.cpp in Sources */,
 				2D95824F26B11D7900E2000E /* Level1.cpp in Sources */,

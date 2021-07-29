@@ -146,27 +146,7 @@ void Entity::EnemyCollide(Entity* enemies, int enemyCount) {
                 enemy->alive = false;
                 enemy->isActive = false;
             }
-            else {
-                alive = false;
-                isActive = false;
-            }
-        }
-        
-    }
-}
-
-void Entity::CheckCollisionsEnemies(Entity* enemies, int enemyCount) {
-    for (int i = 0; i < enemyCount; i++) {
-        Entity* enemy = &enemies[i];
-        if (CheckCollision(enemy)) {
-            float ydist = fabs(position.y - enemy->position.y);
-            float penetrationY = fabs(ydist - (height / 2.0f) - (enemy->height / 2.0f));
-            if (velocity.y < 0) {
-                position.y += penetrationY;
-                velocity.y = 0;
-                enemy->alive = false;
-                enemy->isActive = false;
-            }
+            //update lives based on whether collision has occurred
             else {
                 if (lives == 1) {
                     lives -= 1;
@@ -175,13 +155,15 @@ void Entity::CheckCollisionsEnemies(Entity* enemies, int enemyCount) {
                 }
                 else {
                     lives -= 1;
-                    position = spawn;
+                    //add player back to game
+                    position = newPos;
                 }
             }
         }
 
     }
 }
+
 
 
 void Entity::AI(Entity* player) {
@@ -279,7 +261,7 @@ void Entity::Update(float deltaTime, Entity* player, Entity *objects, int object
     collidedRight = false;
 
     if (entityType == ENEMY) AI(player);
-    else CheckCollisionsEnemies(objects, objectCount);
+    else EnemyCollide(objects, objectCount);
 
     if (animIndices != NULL) {
         if (glm::length(movement) != 0) {
