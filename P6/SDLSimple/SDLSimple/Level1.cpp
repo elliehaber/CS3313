@@ -7,13 +7,13 @@
 
 unsigned int level1_data[] =
 {
-    6, 6, 6, 6, 6, 6, 6, 6, 0, 0, 0, 6, 0, 6,
-    6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 6,
-    6, 6, 6, 6, 6, 6, 6, 6, 0, 0, 6, 6, 0, 6,
+    6, 6, 6, 6, 6, 6, 6, 6, 0, 6, 0, 6, 0, 6,
+    6, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 6, 0, 6,
+    6, 6, 6, 6, 6, 6, 0, 6, 6, 0, 6, 6, 0, 6,
     6, 0, 0, 0, 6, 6, 0, 0, 6, 0, 0, 0, 0, 6,
     6, 0, 6, 0, 0, 6, 6, 0, 0, 0, 6, 0, 6, 6,
     6, 0, 6, 6, 0, 0, 6, 0, 0, 0, 6, 0, 6, 6,
-    0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 6, 0, 6, 6,
+    0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 6,
     6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
 };
 
@@ -56,15 +56,15 @@ void Level1::Initialize() {
     //initialize enemies
     state.enemies = new Entity[LEVEL1_ENEMY_COUNT];
 
-    GLuint frogTextureID = Util::LoadTexture("enemy.png");
-    state.enemies[0].textureID = frogTextureID;
+    GLuint eyeTextureID = Util::LoadTexture("enemy.png");
+    state.enemies[0].textureID = eyeTextureID;
 
 
     for (int i = 0; i < LEVEL1_ENEMY_COUNT; i++) {
         state.enemies[i].entityType = ENEMY;
         state.enemies[i].speed = 1.5f;
     }
-    state.enemies[0].position = glm::vec3(8.0f, -4.5f, 0);
+    state.enemies[0].position = glm::vec3(9.0f, -4.5f, 0);
     state.enemies[0].aiType = WAITANDGO;
     //state.enemies[0].acceleration = glm::vec3(0, -17.81f, 0);
     state.enemies[0].aiState = IDLE;

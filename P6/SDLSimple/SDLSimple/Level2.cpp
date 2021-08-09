@@ -7,12 +7,12 @@
 
 unsigned int level2_data[] =
 {
-    6, 6, 6, 6, 6, 6, 6, 0, 0, 0, 6, 6, 6, 6,
-    6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 6,
-    6, 6, 6, 0, 0, 6, 0, 0, 6, 0, 0, 6, 0, 6,
+    6, 6, 6, 6, 6, 6, 6, 6, 0, 0, 6, 6, 6, 6,
+    6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 6, 0, 6,
+    6, 6, 0, 0, 6, 6, 0, 0, 6, 0, 0, 6, 0, 6,
     6, 0, 0, 0, 0, 0, 0, 0, 6, 6, 0, 0, 0, 6,
     6, 0, 6, 0, 0, 6, 6, 0, 0, 0, 0, 6, 0, 6,
-    6, 0, 6, 0, 0, 0, 0, 0, 6, 6, 0, 0, 0, 6,
+    6, 0, 6, 0, 0, 6, 6, 0, 6, 6, 0, 0, 0, 6,
     0, 0, 6, 0, 0, 0, 0, 0, 0, 6, 6, 6, 0, 6,
     6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
 };
@@ -57,8 +57,8 @@ void Level2::Initialize() {
         state.enemies = new Entity[LEVEL2_ENEMY_COUNT];
     
         state.enemies[0].entityType = ENEMY;
-        GLuint frogTextureID = Util::LoadTexture("enemy.png");
-        state.enemies[0].textureID = frogTextureID;
+        GLuint eyeTextureID = Util::LoadTexture("enemy.png");
+        state.enemies[0].textureID = eyeTextureID;
         state.enemies[0].position = glm::vec3(4.0f, -4.5f, 0);
         state.enemies[0].speed = 0.5f;
         state.enemies[0].aiType = WAITANDGO;
@@ -88,15 +88,16 @@ void Level2::Update(float deltaTime) {
     state.player->Update(deltaTime, state.player, state.enemies, LEVEL2_ENEMY_COUNT, state.map);
     state.lives = state.player->lives;
     //check if out of lives, if so jump to losing screen
-    for (int i = 0; i < LEVEL2_ENEMY_COUNT; i++) {
-        state.enemies[i].Update(deltaTime, state.player, state.enemies, LEVEL2_ENEMY_COUNT, state.map);
-    }
     if (state.lives <= 0) {
         state.nextScene = 5;
     }
     else if (state.player->position.y >= 12.5) {
         state.nextScene = 3;
     }
+    for (int i = 0; i < LEVEL2_ENEMY_COUNT; i++) {
+        state.enemies[i].Update(deltaTime, state.player, state.enemies, LEVEL2_ENEMY_COUNT, state.map);
+    }
+
 }
 
 void Level2::Render(ShaderProgram* program) {

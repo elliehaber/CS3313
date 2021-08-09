@@ -3,18 +3,18 @@
 #define LEVEL3_WIDTH 14
 #define LEVEL3_HEIGHT 8
 
-#define LEVEL3_ENEMY_COUNT 2
+#define LEVEL3_ENEMY_COUNT 3
 
 unsigned int level3_data[] =
 {
     6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 0, 0, 0, 6,
-    6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 0, 0, 0, 6,
-    6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 0, 0, 0, 6,
-    6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 6,
-    6, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 6, 6, 6,
-    6, 0, 0, 6, 0, 6, 0, 6, 0, 6, 6, 6, 6, 6,
-    0, 0, 0, 6, 0, 6, 0, 0, 0, 6, 6, 6, 6, 6,
-    6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+    6, 0, 6, 6, 6, 0, 6, 0, 6, 0, 0, 6, 0, 6,
+    6, 6, 6, 0, 0, 0, 6, 0, 0, 0, 0, 6, 0, 6,
+    6, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 6,
+    6, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 6,
+    6, 0, 0, 0, 0, 6, 0, 6, 0, 6, 6, 0, 6, 6,
+    0, 0, 0, 6, 0, 0, 0, 6, 6, 6, 0, 0, 6, 6,
+    6, 6, 6, 6, 6, 6, 0, 0, 0, 0, 0, 6, 6, 6
 };
 
 void Level3::Initialize() {
@@ -56,39 +56,48 @@ void Level3::Initialize() {
         //initialize enemies
         state.enemies = new Entity[LEVEL3_ENEMY_COUNT];
 
-        GLuint frogTextureID = Util::LoadTexture("enemy.png");
-        state.enemies[0].textureID = frogTextureID;
-        state.enemies[1].textureID = frogTextureID;
+        GLuint eyeTextureID = Util::LoadTexture("enemy.png");
+        state.enemies[0].textureID = eyeTextureID;
+        state.enemies[1].textureID = eyeTextureID;
+        state.enemies[2].textureID = eyeTextureID;
+
 
         for (int i = 0; i < LEVEL3_ENEMY_COUNT; i++) {
             state.enemies[i].entityType = ENEMY;
-            state.enemies[i].speed = 0.5f;
+            state.enemies[i].speed = 0.2f;
         }
-        state.enemies[0].position = glm::vec3(8.0f, -4.5f, 0);
+        state.enemies[0].position = glm::vec3(9.0f, -2.5f, 0);
         state.enemies[0].aiType = WAITANDGO;
         //state.enemies[0].acceleration = glm::vec3(0, -17.81f, 0);
         state.enemies[0].aiState = IDLE;
     
-        state.enemies[1].position = glm::vec3(3.0f, -4.5f, 0);
-        state.enemies[1].newPos = glm::vec3(3.0f, -4.5f, 0);
+        state.enemies[1].position = glm::vec3(7.0f, -3.5f, 0);
+        state.enemies[1].newPos = glm::vec3(7.0f, -3.5f, 0);
 
         state.enemies[1].aiType = WAITANDGO;
         //state.enemies[0].acceleration = glm::vec3(0, -17.81f, 0);
         state.enemies[1].aiState = IDLE;
+    
+        state.enemies[2].position = glm::vec3(5.0f, -4.5f, 0);
+        state.enemies[2].newPos = glm::vec3(5.0f, -4.5f, 0);
+
+        state.enemies[2].aiType = WAITANDGO;
+        //state.enemies[0].acceleration = glm::vec3(0, -17.81f, 0);
+        state.enemies[2].aiState = IDLE;
     }
 
 void Level3::Update(float deltaTime) {
     state.player->Update(deltaTime, state.player, state.enemies, LEVEL3_ENEMY_COUNT, state.map);
     state.lives = state.player->lives;
     //check if out of lives, if so jump to losing screen
-    for (int i = 0; i < LEVEL3_ENEMY_COUNT; i++) {
-        state.enemies[i].Update(deltaTime, state.player, state.enemies, LEVEL3_ENEMY_COUNT, state.map);
-    }
     if (state.lives <= 0) {
         state.nextScene = 5;
     }
     if (state.player->position.y >= 12.5) {
         state.nextScene = 4;
+    }
+    for (int i = 0; i < LEVEL3_ENEMY_COUNT; i++) {
+        state.enemies[i].Update(deltaTime, state.player, state.enemies, LEVEL3_ENEMY_COUNT, state.map);
     }
 }
 
