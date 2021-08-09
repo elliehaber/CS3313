@@ -11,7 +11,6 @@
 		2D28DC4C26C0DCBB00B6162B /* brick_tiles.v1.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D28DC4B26C0DCAA00B6162B /* brick_tiles.v1.png */; };
 		2D28DC4E26C0E24A00B6162B /* Character_assets.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D28DC4D26C0E24300B6162B /* Character_assets.png */; };
 		2D28DC5126C0E2C900B6162B /* enemy.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D28DC5026C0E2C600B6162B /* enemy.png */; };
-		2D28DC5226C0E2CB00B6162B /* player.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95828A26B1AA5700E2000E /* player.png */; };
 		2D28DC5426C0E3D900B6162B /* RobotDasher.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D28DC5326C0E3D000B6162B /* RobotDasher.png */; };
 		2D28DC5826C0F6CD00B6162B /* metal.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D28DC5726C0F6CA00B6162B /* metal.wav */; };
 		2D28DC5A26C0F70E00B6162B /* hit.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D28DC5926C0F70A00B6162B /* hit.wav */; };
@@ -20,8 +19,6 @@
 		2D28DC6126C16C8800B6162B /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D28DC6026C16C8800B6162B /* Entity.cpp */; };
 		2D28DC6226C16C9400B6162B /* Entity.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D28DC6026C16C8800B6162B /* Entity.cpp */; };
 		2D28DC6426C16CCD00B6162B /* Entity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D28DC6326C16CC700B6162B /* Entity.h */; };
-		2D28DC6526C16CEB00B6162B /* player.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D28DC4F26C0E2C100B6162B /* player.png */; };
-		2D28DC6626C16D0400B6162B /* tileset2.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95827726B19F9A00E2000E /* tileset2.png */; };
 		2D7780DE26B220EB00B51A65 /* WinScreen.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95825F26B11F1700E2000E /* WinScreen.cpp */; };
 		2D7780DF26B220ED00B51A65 /* WinScreen.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95826026B11F1700E2000E /* WinScreen.h */; };
 		2D7780E026B220EF00B51A65 /* LoseScreen.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D95825726B11E6000E2000E /* LoseScreen.h */; };
@@ -80,17 +77,14 @@
 				2D95828D26B1AB5C00E2000E /* alien.png in CopyFiles */,
 				2D28DC5E26C104E800B6162B /* robot.png in CopyFiles */,
 				2D95828926B1A9EC00E2000E /* frog.png in CopyFiles */,
-				2D28DC6626C16D0400B6162B /* tileset2.png in CopyFiles */,
 				2D28DC5C26C0FE2800B6162B /* knight.png in CopyFiles */,
 				2D28DC6426C16CCD00B6162B /* Entity.h in CopyFiles */,
 				2D28DC5A26C0F70E00B6162B /* hit.wav in CopyFiles */,
 				2D28DC6226C16C9400B6162B /* Entity.cpp in CopyFiles */,
-				2D28DC6526C16CEB00B6162B /* player.png in CopyFiles */,
 				2D28DC5826C0F6CD00B6162B /* metal.wav in CopyFiles */,
 				2D28DC4A26C0DA9200B6162B /* 0x72_DungeonTilesetII_v1.3.png in CopyFiles */,
 				2D95828326B1A79F00E2000E /* bounce.wav in CopyFiles */,
 				2D28DC4C26C0DCBB00B6162B /* brick_tiles.v1.png in CopyFiles */,
-				2D28DC5226C0E2CB00B6162B /* player.png in CopyFiles */,
 				2D28DC5426C0E3D900B6162B /* RobotDasher.png in CopyFiles */,
 				2D95827626B1274E00E2000E /* Util.h in CopyFiles */,
 				2D28DC4E26C0E24A00B6162B /* Character_assets.png in CopyFiles */,
@@ -126,7 +120,6 @@
 		2D28DC4926C0DA7000B6162B /* 0x72_DungeonTilesetII_v1.3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0x72_DungeonTilesetII_v1.3.png; sourceTree = "<group>"; };
 		2D28DC4B26C0DCAA00B6162B /* brick_tiles.v1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brick_tiles.v1.png; sourceTree = "<group>"; };
 		2D28DC4D26C0E24300B6162B /* Character_assets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Character_assets.png; sourceTree = "<group>"; };
-		2D28DC4F26C0E2C100B6162B /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = player.png; path = ../../../../../player.png; sourceTree = "<group>"; };
 		2D28DC5026C0E2C600B6162B /* enemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy.png; sourceTree = "<group>"; };
 		2D28DC5326C0E3D000B6162B /* RobotDasher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RobotDasher.png; sourceTree = "<group>"; };
 		2D28DC5726C0F6CA00B6162B /* metal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = metal.wav; sourceTree = "<group>"; };
@@ -156,7 +149,6 @@
 		2D95826026B11F1700E2000E /* WinScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WinScreen.h; sourceTree = "<group>"; };
 		2D95826226B1217E00E2000E /* Util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Util.cpp; sourceTree = "<group>"; };
 		2D95826326B1217E00E2000E /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
-		2D95827726B19F9A00E2000E /* tileset2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tileset2.png; path = "../../../../../../Downloads/Magic-Cliffs-Environment/PNG/tileset2.png"; sourceTree = "<group>"; };
 		2D95827926B1A06500E2000E /* Terrain (16x16).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Terrain (16x16).png"; sourceTree = "<group>"; };
 		2D95827B26B1A18A00E2000E /* countrytileset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countrytileset.png; sourceTree = "<group>"; };
 		2D95827D26B1A33E00E2000E /* iso_tileset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iso_tileset.png; sourceTree = "<group>"; };
@@ -166,7 +158,6 @@
 		2D95828426B1A80000E2000E /* magic cliffs.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "magic cliffs.wav"; sourceTree = "<group>"; };
 		2D95828526B1A86400E2000E /* Jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Jump.wav; sourceTree = "<group>"; };
 		2D95828826B1A9E800E2000E /* frog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog.png; sourceTree = "<group>"; };
-		2D95828A26B1AA5700E2000E /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
 		2D95828C26B1AB5600E2000E /* alien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien.png; sourceTree = "<group>"; };
 		2D95828E26B1FBD700E2000E /* Terrain (32x32).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Terrain (32x32).png"; sourceTree = "<group>"; };
 		2DAC7C7B267069D10001791F /* SDLSimple */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SDLSimple; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -610,7 +601,6 @@
 				2DF79729269FBCDD00F57A20 /* walk_animation_frame1_2.png */,
 				2D95827D26B1A33E00E2000E /* iso_tileset.png */,
 				2DF7972D269FBD0400F57A20 /* skeleton-animation_01.png */,
-				2D95827726B19F9A00E2000E /* tileset2.png */,
 				2D95828226B1A79300E2000E /* bounce.wav */,
 				2DF7972F269FBDC700F57A20 /* crab_sprite_sheet.png */,
 				2D95827926B1A06500E2000E /* Terrain (16x16).png */,
@@ -629,10 +619,8 @@
 				2D95827F26B1A3D800E2000E /* skelet_idle_anim_f0.png */,
 				2D95828526B1A86400E2000E /* Jump.wav */,
 				2D28DC4B26C0DCAA00B6162B /* brick_tiles.v1.png */,
-				2D28DC4F26C0E2C100B6162B /* player.png */,
 				2D95827B26B1A18A00E2000E /* countrytileset.png */,
 				2D95828826B1A9E800E2000E /* frog.png */,
-				2D95828A26B1AA5700E2000E /* player.png */,
 				2D28DC5026C0E2C600B6162B /* enemy.png */,
 				2D95824826B102B700E2000E /* george_0.png */,
 				2D95828C26B1AB5600E2000E /* alien.png */,

@@ -55,7 +55,7 @@ void Initialize() {
 
     glViewport(0, 0, 640, 480);
 
-    program.Load("shaders/vertex_textured.glsl", "shaders/fragment_textured.glsl");
+    program.Load("/Users/elliehaber/Desktop/CS3313/P6/SDLSimple/SDLSimple/shaders/vertex_textured.glsl", "/Users/elliehaber/Desktop/CS3313/P6/SDLSimple/SDLSimple/shaders/fragment_textured.glsl");
 
     //add in audio tracks for background and jumping effect
     Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 4096);
